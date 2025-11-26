@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Aurora from "@/components/reactbits/Aurora";
+import Navbar from "@/components/reactbits/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,8 +27,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-full relative`}
       >
+        <Navbar />
+        <div className="absolute inset-0 top-0 z-[-1] min-h-screen">
+          <Aurora
+            colorStops={["#062b75", "#38b072", "#80b038"]}
+            blend={0.5}
+            amplitude={0.5}
+            speed={0.8}
+          />
+        </div>
         {children}
       </body>
     </html>
