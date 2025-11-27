@@ -1,6 +1,5 @@
 "use client";
 
-import { div } from "motion/react-client";
 import Image from "next/image";
 import { useState } from "react";
 import { Fragment } from "react";

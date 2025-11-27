@@ -34,7 +34,7 @@ export default function ProjectCards() {
             >
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4">
                 <Image
-                  src="/images/projects/ecommerceImage.png"
+                  src="/images/projects/ecommerceImageGoods.png"
                   alt=""
                   width={1280}
                   height={1024}
