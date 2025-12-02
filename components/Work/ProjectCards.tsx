@@ -15,7 +15,7 @@ const myProject: ProjectCards[] = [
         id: 1,
         title: "Ecommerce",
         tags: ["React", "TailwindCSS", "TypeScript", "Mongoose"],
-        src: "/images/projects/ecommerceImage.png",
+        src: "/images/projects/ecommerceImageGoods.png",
         websiteUrl: "http://ryanecommercereact.space",
         githubUrl: "https://github.com/RYANDEXT/ecommerce-project",
     },
