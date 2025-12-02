@@ -1,4 +1,4 @@
-import HomeSection from "@/components/home/HomeSection";
+import HomeSection from "@/components/Home/HomeSection";
 import WorkSection from "@/components/Work/WorkSection";
 import ContactSection from "@/components/contact/ContactSection";
 import Footer from "@/components/footer/Footer";
