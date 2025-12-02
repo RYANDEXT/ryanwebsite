@@ -6,6 +6,8 @@ type ProjectCards = {
   title: string;
   tags: string[];
   src: string;
+  websiteUrl: string;
+  githubUrl: string;
 };
 
 const myProject: ProjectCards[] = [
@@ -14,6 +16,16 @@ const myProject: ProjectCards[] = [
     title: "Ecommerce",
     tags: ["React", "TailwindCSS", "TypeScript", "Mongoose"],
     src: "/images/projects/ecommerceImage.png",
+    websiteUrl: "http://ryanecommercereact.space",
+    githubUrl: "https://github.com/RYANDEXT/ecommerce-project",
+  },
+  {
+    id: 2,
+    title: "Marketlens Stock Tracker App",
+    tags: ["NextJS", "Mongoose", "Better Auth", "TypeScript"],
+    src: "/images/projects/marketlensStocks1.png",
+    websiteUrl: "https://marketlens-stock-tracker-app-11np.vercel.app/",
+    githubUrl: "https://github.com/RYANDEXT/marketlens-stock-tracker-app",
   },
 ];
 
@@ -27,14 +39,14 @@ export default function ProjectCards() {
             key={item.id}
           >
             <Link
-              href="http://ryanecommercereact.space"
+              href={item.websiteUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="block"
             >
               <div className="rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 mb-4">
                 <Image
-                  src="/images/projects/ecommerceImageGoods.png"
+                  src={item.src}
                   alt=""
                   width={1280}
                   height={1024}
@@ -44,7 +56,7 @@ export default function ProjectCards() {
             </Link>
             <div className="flex items-center px-3">
               <Link
-                href="http://ryanecommercereact.space"
+                href={item.websiteUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
@@ -67,7 +79,7 @@ export default function ProjectCards() {
               </Link>
               <div className="flex gap-2 ml-auto">
                 <Link
-                  href="http://ryanecommercereact.space"
+                  href={item.githubUrl}
                   target="_blank"
                   aria-label="Github"
                   className="size-14 flex justify-center items-center text-gray-100 hover:text-white transition duration-300 ease-in-out border border-white/10 p-3 rounded-xl hover:bg-black/10 hover:shadow-[0px_0px_17px_rgba(187,244,81,1)] hover:border-lime-300"
@@ -80,7 +92,7 @@ export default function ProjectCards() {
                   ></Image>
                 </Link>
                 <Link
-                  href="https://github.com/RYANDEXT/react_supersimpledev"
+                  href={item.websiteUrl}
                   target="_blank"
                   aria-label="Github"
                   className="size-14 flex justify-center items-center text-gray-100 hover:text-white transition duration-300 ease-in-out border border-white/10 p-3 rounded-xl hover:bg-black/10 hover:shadow-[0px_0px_17px_rgba(187,244,81,1)] hover:border-lime-300"

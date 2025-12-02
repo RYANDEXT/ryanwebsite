@@ -116,8 +116,8 @@ export default function HomeSection() {
             <p className="mt-8 font-medium text-lime-300 text-lg ">
               Approach and Implementation
             </p>
-            <h2 className="font-semibold text-5xl text-pretty mb-8">
-              My Design Process
+            <h2 className="font-semibold text-4xl text-pretty mb-8">
+              My Web Development Process
             </h2>
 
             <div className="flex text-left">
