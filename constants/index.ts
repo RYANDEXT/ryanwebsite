@@ -12,7 +12,7 @@ const myProject: ProjectCards[] = [
         id: 1,
         title: 'Ecommerce',
         tags: ['MongoDB', 'Express', 'React', 'Node JS'],
-        src: '/images/projects/ecommerceImage.png',
+        src: '/images/projects/ecommerceImageGoods.png',
         websiteUrl: 'http://ryanecommercereact.space',
         githubUrl: 'https://github.com/RYANDEXT/ecommerce-project',
     },
