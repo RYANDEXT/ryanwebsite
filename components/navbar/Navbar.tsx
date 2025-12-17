@@ -19,8 +19,8 @@ const Navbar = () => {
     const activeSection = useActiveSection(sections.map((s) => s.id));
 
     return (
-        <nav className="fixed bg-black/30 flex justify-between item-center gap-16 py-3 px-10 left-1/2 translate-x-[-50%] top-5 rounded-full backdrop-blur-sm text-gray-500 shadow-lg shadow-black/50 z-10 border-gray-50/20 border">
-            <ul className="flex gap-8 text-xl">
+        <nav className="fixed bg-black/30 flex justify-between items-center gap-4 sm:gap-8 py-2 sm:py-3 px-4 sm:px-6 md:px-10 left-4 right-4 sm:left-1/2 sm:right-auto sm:translate-x-[-50%] top-5 rounded-lg sm:rounded-full backdrop-blur-sm text-gray-500 shadow-lg shadow-black/50 z-10 border-gray-50/20 border">
+            <ul className="flex gap-4 sm:gap-8 text-base sm:text-xl">
                 {sections.map((section) => {
                     const isActive = activeSection === section.id;
 
@@ -33,6 +33,7 @@ const Navbar = () => {
                                         ? "text-white font-semibold"
                                         : "text-gray-400"
                                 }`}
+                                aria-current={isActive ? "page" : undefined}
                             >
                                 {isActive && (
                                     <span

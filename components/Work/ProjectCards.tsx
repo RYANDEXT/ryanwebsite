@@ -1,6 +1,33 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import myProject from '@/constants/index';
+
+type ProjectCards = {
+    id: number;
+    title: string;
+    tags: string[];
+    src: string;
+    websiteUrl: string;
+    githubUrl: string;
+};
+
+const myProject: ProjectCards[] = [
+    {
+        id: 1,
+        title: 'Ecommerce',
+        tags: ['React', 'TailwindCSS', 'TypeScript', 'Mongoose'],
+        src: '/images/projects/ecommerceImage.png',
+        websiteUrl: 'http://ryanecommercereact.space',
+        githubUrl: 'https://github.com/RYANDEXT/ecommerce-project',
+    },
+    {
+        id: 2,
+        title: 'Marketlens Stock Tracker App',
+        tags: ['NextJS', 'Mongoose', 'Better Auth', 'TypeScript'],
+        src: '/images/projects/marketlensStocks1.png',
+        websiteUrl: 'https://marketlens-stock-tracker-app-11np.vercel.app/',
+        githubUrl: 'https://github.com/RYANDEXT/marketlens-stock-tracker-app',
+    },
+];
 
 export default function ProjectCards() {
     return (
